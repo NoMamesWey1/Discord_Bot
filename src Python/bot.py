@@ -1,10 +1,10 @@
 import discord
 import responses
 import sys
+#sends message to the channel if it meets something in responses else doesn't respond
 async def send_message(message, user_message, is_private):
     try:
         response = responses.get_response(user_message)
-        # await message.author.send(response) sends a peronal dm to everyone or just me?
         if is_private:
             await message.author.send(response)  
         else:
@@ -16,9 +16,9 @@ async def send_message(message, user_message, is_private):
     except Exception as e:
         print(e)
 
-
+# connecting bot the server
 def run_discord_bot():
-    TOKEN = 'MTA1OTY5MjY4NDI0OTQwMzQ1Mg.GzCLn8.ZbfdvFm3Tf868eN3u7DEugn6zxsFQJzYGFgoAg'
+    TOKEN = 'YOUR TOKEN'#put ur token in a string
     intents = discord.Intents.default()
     intents.message_content = True
     client = discord.Client(intents=intents)
@@ -26,7 +26,7 @@ def run_discord_bot():
     @client.event
     async def on_ready():
         print(f'{client.user} is now running!')
-        general_channel = client.get_channel(1059916523042504727)
+        general_channel = client.get_channel('YOUR CHANNEL ID')#put as an integer
         await general_channel.send('Bot Online')
 
 
@@ -46,6 +46,5 @@ def run_discord_bot():
             await send_message(message, user_message, is_private=True)
         else:
             await send_message(message, user_message, is_private=False)
-            #await message.channel.send("asdfasdf") sends message in channel
 
     client.run(TOKEN)
