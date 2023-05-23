@@ -1,6 +1,6 @@
 import random
 
-roast = ["1. I’m not saying you’re ugly, but if I throw a stick, you fetch and bring it back.",
+roast = ["1. I’m not saying you’re ugly, but I'm saying you're extremely ugly.",
 "2. Before we start, dude, you’ve got something on your chin … no, not that one … nope, keep going.",
 "3. If your brain was made of dynamite, you couldn’t even blow your nose!",
 "4. I’m not saying you’re boring, but if you’re a gray sprinkle on a rainbow cupcake!",
