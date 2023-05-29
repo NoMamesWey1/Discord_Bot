@@ -1,2 +1,2 @@
 # Discord_Bot
-Created a basic discord bot in Python and Javascript. Here are some of the basics of what the bot can do like reading messeages in from the channel and responding back.
+Developed a chat bot utilizing Discord's API to enhance user engagement through keyword and phrase recognition. Created in Javascript and Python.
