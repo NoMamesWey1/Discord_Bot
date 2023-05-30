@@ -7,7 +7,7 @@ Developed a chat bot utilizing Discord's API to enhance user engagement through 
 - Configuration
 - Commands
 
-**Installation**
+## **Installation**
 
 Clone the repository or download the source code.
 
@@ -27,11 +27,11 @@ If using Python:
 
 After filling in the missing pieces of the code bot.py or index.js, run the main.py or index.js for the bot to start working
 
-**Configuration**
+## **Configuration**
 To obtain a bot token, you will need to create a bot on the Discord Developer Portal. 
 As well you can find 'YOUR CHANNEL ID' by right clicking on your server channel.
 
-**Commands**
+## **Commands**
 !help: Display the help message with a list of available commands.
 !roll: rolls a random number between 1 - 100.
 !hello: Send a random greeting message.
