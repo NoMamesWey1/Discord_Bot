@@ -33,7 +33,11 @@ As well you can find 'YOUR CHANNEL ID' by right clicking on your server channel.
 
 ## **Commands**
 !help: Display the help message with a list of available commands.
+
 !roll: rolls a random number between 1 - 100.
+
 !hello: Send a random greeting message.
+
 !roast: gives a joke that roast someone.
+
 !bot go offline: turns the bot off.
