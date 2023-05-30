@@ -64,26 +64,26 @@ roast = ["1. I’m not saying you’re ugly, but I'm saying you're extremely ugl
 def get_response(message: str) -> str:
     msg = message.lower()
     # greeting
-    if msg == 'hello':
+    if msg == '!hello':
         greetings = ['Hey there!','Hello','Bonjour','Hola','What do you want!?','Como puedo ayudar','What do you need?']
         return greetings[random.randint(0,len(greetings))]
 
     #rolling a random num 1-100
-    if msg == 'roll':
+    if msg == '!roll':
         word = str(random.randint(1,100))
         word = 'The number you rolled is '+word
         return word
 
     # give list of commands the bot can do 
     if msg == '!help':
-        return '`List of Commands:\n1.type hello - bot will respond with a greeting\n2.type roll- roll a random number between 1-100\n3.type roast - roast people`'
+        return '`List of Commands:\n1.type !hello - bot will respond with a greeting\n2.type !roll- roll a random number between 1-100\n3.type !roast - roast people\n4. type !bot go offline- turns the bot off`'
 
     # roast people. find a list of roast
-    if msg == 'roast':
+    if msg == '!roast':
         return roast[random.randint(1,len(roast))]
 
     #turns bot offline  
-    if msg == 'bot go offline':
+    if msg == '!bot go offline':
         return 'Bot Offline'
   
 
